@@ -12,6 +12,24 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {};
-//vamo começar o sofrimento
+const average = (array) => {
+  let contador = false;
+  array.forEach((element2) => {
+    if (typeof element2 === 'string') {
+      contador = true;
+    }
+  });
+  if (contador === true || !array.length) {
+    return undefined;
+  }
+  let calculo = 0;
+  array.forEach((element) => {
+    calculo += element;
+  });
+  let result = Math.round(calculo / array.length, 10);
+  return result;
+};
+
 module.exports = average;
+
+// referencia: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/round
