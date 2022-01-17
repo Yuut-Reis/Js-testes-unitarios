@@ -13,5 +13,5 @@
 */
 
 const average = () => {};
-
+//vamo começar o sofrimento
 module.exports = average;
