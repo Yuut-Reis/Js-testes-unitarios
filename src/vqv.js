@@ -16,6 +16,14 @@
       #VQV!'
 */
 
-const vqv = () => {};
+const vqv = (umaString, umNumero) => {
+  if (umaString === '' || typeof umNumero !== 'number') {
+    return undefined;
+  }
+  return `Oi, meu nome é ${umaString}!
+Tenho ${umNumero} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
+};
 
 module.exports = vqv;
