@@ -27,12 +27,23 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
   it('Verifica se ao receber um raio, a função `circle` retorna um objeto contedos os valores esperados', () => {
     // ESCREVA SEUS TESTES ABAIXO:
     // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
+    expect(circle('teste')).toBeUndefined()
     // Teste se circle retorna um objeto.
+    expect(circle(42)).toBeInstanceOf(Object)
     // Teste se o objeto retornado tem 3 propriedades.
+    expect(Object.keys(circle(7)).length).toBe(3)
     // Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
+    expect(circle()).toBeUndefined()
     // Teste se dentro do objeto retornado, a função retorna uma key com value igual a circunferência correta para um círculo de raio 2.
+    expect(circle(2).circumference).toBeCloseTo(12.57, 1)
     // Teste se dentro do objeto retornado, a função retorna uma key com value igual a área correta para um círculo de raio 3.
+    expect(circle(3).area).toBeCloseTo(28.26, 1)
     // Teste que a função retorna, num objeto, os dados corretos de um círculo de raio 3.
+    expect(circle(3).area).toBeCloseTo(28.26, 1)
+    expect(circle(3).circumference).toBeCloseTo(18.84, 1)
+    expect(circle(3).radius).toBeCloseTo(3, 1)
   });
 });
 
+//referencia: https://jestjs.io/pt-BR/docs/expect#tobeinstanceofclass 
+// https://qastack.com.br/programming/47754777/jest-how-to-test-for-object-keys-and-properties
