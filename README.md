@@ -6,7 +6,7 @@ Nesse projeto utilizei o Jest para implementar testes em funções Javascript Fo
 <hr>
    🚀 <strong>Como executar o projeto</strong>
 
-  1. Clone o repositório ` git clone git@github.com:Yuut-Reis/Todo-list.git`
+  1. Clone o repositório ` git clone git@github.com:Yuut-Reis/Js-testes-unitarios.git`
 
   2. Entre na pasta do repositório que você acabou de clonar:
   * `cd pasta-do-repositório`
